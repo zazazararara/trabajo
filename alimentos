@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Rating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            text-align: center;
+        }
+        header {
+            background-color: #ffc107;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .food-item {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: inline-block;
+            width: 80%;
+            max-width: 400px;
+            background-color: #fff;
+        }
+        .food-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .rating {
+            margin: 1rem 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rate Your Favorite Food</h1>
+    </header>
+    <main>
+        <section class="food-item">
+            <h2>Pizza</h2>
+            <img src="https://via.placeholder.com/400x200?text=Pizza" alt="Pizza">
+            <div class="rating">
+                <label for="pizza-rating">Rate: </label>
+                <select id="pizza-rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="food-item">
+            <h2>Burger</h2>
+            <img src="https://via.placeholder.com/400x200?text=Burger" alt="Burger">
+            <div class="rating">
+                <label for="burger-rating">Rate: </label>
+                <select id="burger-rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="food-item">
+            <h2>Sushi</h2>
+            <img src="https://via.placeholder.com/400x200?text=Sushi" alt="Sushi">
+            <div class="rating">
+                <label for="sushi-rating">Rate: </label>
+                <select id="sushi-rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Rating. All rights reserved.</p>
+    </footer>
+</body>
+</html>
